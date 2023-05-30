@@ -28,7 +28,7 @@ const Auth = () => {
 
         const { username, password, phoneNumber, avatarURL } = form;
 
-        const URL = 'https://med-chat-abs8qtxpz-rajatrai30.vercel.app/auth';
+        const URL = 'https://med-chat-lilac.vercel.app/auth';
 
         const { data: { token, userId, hashedPassword, fullName } } = await axios.post(`${URL}/${isSignup ? 'signup' : 'login'}`, {
             username, password, fullName: form.fullName, phoneNumber, avatarURL,
