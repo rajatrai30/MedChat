@@ -1,7 +1,8 @@
 import React from 'react';
 import { Channel, MessageTeam } from 'stream-chat-react';
+import './ChannelContainer.css';
 
-import { ChannelInner, CreateChannel, EditChannel } from './';
+import { ChannelInner, CreateChannel, EditChannel } from '..';
 
 const ChannelContainer = ({ isCreating, setIsCreating, isEditing, setIsEditing, createType }) => {
     if(isCreating) {
@@ -28,7 +29,7 @@ const ChannelContainer = ({ isCreating, setIsCreating, isEditing, setIsEditing, 
     )
 
     return (
-        <div className=" channel__container">
+        <div className="channel__container">
             <Channel
                 EmptyStateIndicator={EmptyState}
                 Message={(messageProps, i) => <MessageTeam key={i} {...messageProps} />}
