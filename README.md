@@ -1,6 +1,6 @@
-# Medical Chat App
+# ****Under Maintainance****
 
-<!-- ![Chat Application](https://i.ibb.co/hsvcw4V/image.png) -->
+# Medical Chat App
 
 Setup:
 - run ```npm i && npm start``` for both client and server side to start the development server
